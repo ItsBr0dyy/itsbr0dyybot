@@ -90,10 +90,6 @@ async def vanity_command(cmd: ChatCommand):
 async def clanker_command(cmd: ChatCommand):
         await cmd.reply('/me ow that hurt fuck you')
 
-# 67 command
-async def sixseven_command(cmd: ChatCommand):
-        await cmd.reply('/me 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67')
-
 # botdiscord command
 async def botdiscord_command(cmd: ChatCommand):
         await cmd.reply('/me Join The Discord: https://discord.gg/Xbm5Kr5vSJ')
@@ -299,7 +295,6 @@ async def run_bot():
     chat.register_command('clanker', clanker_command)
     chat.register_command('twerk', twerk_command)
     chat.register_command('discordbot', discordbot_command)
-    chat.register_command('67', sixseven_command)
     chat.register_command('mafiathon', mafiathon_command)
     
     # Start the chat bot
