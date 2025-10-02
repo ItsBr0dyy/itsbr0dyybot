@@ -78,6 +78,10 @@ async def quote_command(cmd: ChatCommand):
 async def twerk_command(cmd: ChatCommand):
         await cmd.reply('/me duckass')
 
+# github command
+async def github_command(cmd: ChatCommand):
+        await cmd.reply('Here is the GitHub repo - https://github.com/ItsBr0dyy/itsbr0dyybot/')
+
 # discordjoin command
 async def discordbot_command(cmd: ChatCommand):
         await cmd.reply('/me Add the bot to your server: https://discord.com/oauth2/authorize?client_id=1418412121703710720&permissions=8&integration_type=0&scope=bot')
@@ -339,6 +343,7 @@ async def run_bot():
     chat.register_command('HAH', HAH_command)
     chat.register_command('multitwitch', multitwitch_command)
     chat.register_command('ask', ask_command)
+    chat.register_command('github', github_command)
 
     # Start the chat bot
     chat.start()
