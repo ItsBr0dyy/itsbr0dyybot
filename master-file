@@ -8,8 +8,15 @@ import random
 
 # Set up contestants
 APP_ID = "kohp257tzbt50k6hseupusnfj134d2"
-APP_SECRET = "nkdvxej0q2ulad81xuy4w38nraspp1"
-USER_SCOPE = [AuthScope.CHAT_READ, AuthScope.CHAT_EDIT, AuthScope.CHANNEL_MANAGE_BROADCAST]
+APP_SECRET = "6kfhq0c3fujvr4ms5an1ojxegr7j99"
+USER_SCOPE = [
+    AuthScope.CHAT_READ,           # Read chat messages
+    AuthScope.CHAT_EDIT,           # Send chat messages  
+    AuthScope.CHANNEL_MANAGE_BROADCAST,  # Manage broadcast settings
+    AuthScope.CHANNEL_MODERATE,    # Moderate chat (timeout, ban, delete messages)
+    AuthScope.USER_BOT,            # Bot account authorization
+    AuthScope.CHANNEL_BOT          # Allow users to add chatbot to their channel
+]
 TARGET_CHANNEL = '6PLJay', 'DUSSEI', 'jonnypunan1', 'moxzymindset', 'bandstarowenn', 'itsbr0dyybot', 'ohkaydxnce', 'jjaidens', 'boggles', 'rxzzlive', '7xaspect', 'r3demptiontj', 'kevinmeelo', 'magicnxtup', 'k3tchemm', 'landincarrofficial', 'rynotheracoon', 'elijahbarnesx1', 'nic2icey', 'retweetlani', 'markey_live', 'brodymostwanted', 'itsbr0dyy', 'pladdytana', 'humphreytheking', 'nismo350z1', '6pljay', 'gavinmagnus', 'wishforstar'
 
 # Listen for chat messages
@@ -143,7 +150,7 @@ async def fairs_command(cmd: ChatCommand):
 # ohnono command
 async def ohnono_command(cmd: ChatCommand):
         await cmd.reply('/me ohnono')
-    
+
 # HAH command
 async def HAH_command(cmd: ChatCommand):
         await cmd.reply('/me HAH fckn loser')
@@ -281,7 +288,7 @@ async def main():
 async def run_bot():
     # Authenticate application
     bot = await Twitch(APP_ID, APP_SECRET)
-    
+
     # Use Replit domain for OAuth redirect (not localhost)
     import os
     replit_domain = os.getenv('REPLIT_DEV_DOMAIN', 'localhost')
