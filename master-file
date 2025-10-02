@@ -8,9 +8,9 @@ import random
 
 # Set up contestants
 APP_ID = "kohp257tzbt50k6hseupusnfj134d2"
-APP_SECRET = "kenf4uk679gcbt9z9a888omnavkbwd"
+APP_SECRET = "nkdvxej0q2ulad81xuy4w38nraspp1"
 USER_SCOPE = [AuthScope.CHAT_READ, AuthScope.CHAT_EDIT, AuthScope.CHANNEL_MANAGE_BROADCAST]
-TARGET_CHANNEL = '6PLJay', 'DUSSEI', 'jonnypunan1', 'moxzymindset', 'bandstarowenn', 'itsbr0dyybot', 'ohkaydxnce', 'jjaidens', 'boggles', 'rxzzlive', '7xaspect', 'r3demptiontj', 'kevinmeelo', 'magicnxtup', 'k3tchemm', 'landincarrofficial', 'rynotheracoon', 'elijahbarnesx1', 'nic2icey', 'retweetlani', 'markey_live'
+TARGET_CHANNEL = '6PLJay', 'DUSSEI', 'jonnypunan1', 'moxzymindset', 'bandstarowenn', 'itsbr0dyybot', 'ohkaydxnce', 'jjaidens', 'boggles', 'rxzzlive', '7xaspect', 'r3demptiontj', 'kevinmeelo', 'magicnxtup', 'k3tchemm', 'landincarrofficial', 'rynotheracoon', 'elijahbarnesx1', 'nic2icey', 'retweetlani', 'markey_live', 'brodymostwanted', 'itsbr0dyy', 'pladdytana'
 
 # Listen for chat messages
 async def on_message(msg: ChatMessage):
@@ -78,7 +78,7 @@ async def quote_command(cmd: ChatCommand):
 async def twerk_command(cmd: ChatCommand):
         await cmd.reply('/me duckass')
 
-# discordbot command
+# discordjoin command
 async def discordbot_command(cmd: ChatCommand):
         await cmd.reply('/me Add the bot to your server: https://discord.com/oauth2/authorize?client_id=1418412121703710720&permissions=8&integration_type=0&scope=bot')
 
@@ -90,13 +90,32 @@ async def vanity_command(cmd: ChatCommand):
 async def clanker_command(cmd: ChatCommand):
         await cmd.reply('/me ow that hurt fuck you')
 
+# 67 command
+async def sixseven_command(cmd: ChatCommand):
+        await cmd.reply('/me 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67')
+
 # botdiscord command
 async def botdiscord_command(cmd: ChatCommand):
         await cmd.reply('/me Join The Discord: https://discord.gg/Xbm5Kr5vSJ')
 
 # dihsize command
 async def dihsize_command(cmd: ChatCommand):
-        await cmd.reply('/me dih size is 67')
+    chance = random.randint(0, 6)
+
+    if chance == 0:
+        await cmd.reply("/me the streamer's dih size is 67")
+    elif chance == 1:
+        await cmd.reply("/me the streamer's dih size is too small")
+    elif chance == 2:
+        await cmd.reply("/me the streamer's dih size is 2 inches (it is average tho)")
+    elif chance == 3:
+        await cmd.reply("/me the streamer's dih size is 99999999")
+    elif chance == 4:
+        await cmd.reply("/me the streamer's dih size is- WTFFFF")
+    elif chance == 5:
+        await cmd.reply("/me the streamer's dih size is too massive")
+    elif chance == 6:
+        await cmd.reply("/me the streamer's dih size is 10 centimeters")
 
 # hi command
 async def hi_command(cmd: ChatCommand):
@@ -120,6 +139,10 @@ async def fairs_command(cmd: ChatCommand):
 # ohnono command
 async def ohnono_command(cmd: ChatCommand):
         await cmd.reply('/me ohnono')
+    
+# HAH command
+async def HAH_command(cmd: ChatCommand):
+        await cmd.reply('/me HAH fckn loser')
 
 # ome32 command
 async def ome32_command(cmd: ChatCommand):
@@ -225,27 +248,45 @@ async def prime_command(cmd: ChatCommand):
 async def cmds_command(cmd: ChatCommand):
         await cmd.reply('/me Check out the ItsBr0dyyBot commands: https://fossabot.com/itsbr0dyybot/commands')
 
-# subtember command
-async def subtember_command(cmd: ChatCommand):
-        await cmd.reply('/me Sub, gift a subscription (Prime do not count), or use Bits during SUBtember - from Aug 29 to Oct 1. Delivered with a delay of up to 7 business days!') 
-
-# vct command
-async def vct_command(cmd: ChatCommand):
-        await cmd.reply('/me Subscribe or gift a subscription (Prime do not count) to any streamer in the VALORANT category with drops enabled during VALORANT Champions 2025. (Sep 12 - Oct 5).') 
-
 # twitchcon command
 async def twitchcon_command(cmd: ChatCommand):
         await cmd.reply('/me TwitchCon tickets are now on sale and will unlock a global badge. Additionally, if you use a referral link, you will also unlock the Chrome Star badge.') 
 
-# mafiathon command
-async def mafiathon_command(cmd: ChatCommand):
-        await cmd.reply('/me Mafiathon 3 is live now! Sub up to Kai Cenat while he is live to receive the Mafiathon 3 badge! (Ends on October 1) https://www.twitch.tv/kaicenat')
+# multitwitch command
+async def multitwitch_command(cmd: ChatCommand):
+        await cmd.reply('/me Multitwitch is a website that allows you to watch multiple streams at once. https://multitwitch.tv/')
+
+# ask command
+async def ask_command(cmd: ChatCommand):
+        await cmd.reply('/me you dumbass really think i am smart enough to answer that question?')
+
+async def on_sub(sub: ChatSub):
+    print(f'New subscription in {sub.room.name}:\n'
+          f'  Type: {sub.sub_plan}\n'
+          f'  Message: {sub.sub_message}')
+
+async def main():
+    twitch = await Twitch(APP_ID, APP_SECRET)
+    auth = UserAuthenticator(twitch, USER_SCOPE)
+    token, refresh_token = await auth.authenticate()
+    await twitch.set_user_authentication(token, USER_SCOPE, refresh_token)
+
+    chat = await Chat(twitch)
 
 # Bot setup function
 async def run_bot():
     # Authenticate application
     bot = await Twitch(APP_ID, APP_SECRET)
-    auth = UserAuthenticator(bot, USER_SCOPE)
+    
+    # Use Replit domain for OAuth redirect (not localhost)
+    import os
+    replit_domain = os.getenv('REPLIT_DEV_DOMAIN', 'localhost')
+    redirect_url = f'https://{replit_domain}/' if replit_domain != 'localhost' else 'http://localhost:17563'
+    auth = UserAuthenticator(
+        bot, 
+        USER_SCOPE,
+        url=redirect_url
+    )
     token, refresh_token = await auth.authenticate()
     await bot.set_user_authentication(token, USER_SCOPE, refresh_token)
 
@@ -255,6 +296,7 @@ async def run_bot():
     # Register events
     chat.register_event(ChatEvent.READY, on_ready)
     chat.register_event(ChatEvent.MESSAGE, on_message)
+    chat.register_event(ChatEvent.SUB, on_sub)
 
     # Register commands
     chat.register_command('lurk', lurk_command)
@@ -280,8 +322,6 @@ async def run_bot():
     chat.register_command('chatterino', chatterino_command)
     chat.register_command('7tv', seventv_command)
     chat.register_command('fact', fact_command)
-    chat.register_command('vct', vct_command)
-    chat.register_command('subtember', subtember_command)
     chat.register_command('twitchcon', twitchcon_command)
     chat.register_command('enhancer', enhancer_command)
     chat.register_command('mobile', mobile_command)
@@ -295,8 +335,11 @@ async def run_bot():
     chat.register_command('clanker', clanker_command)
     chat.register_command('twerk', twerk_command)
     chat.register_command('discordbot', discordbot_command)
-    chat.register_command('mafiathon', mafiathon_command)
-    
+    chat.register_command('67', sixseven_command)
+    chat.register_command('HAH', HAH_command)
+    chat.register_command('multitwitch', multitwitch_command)
+    chat.register_command('ask', ask_command)
+
     # Start the chat bot
     chat.start()
 
