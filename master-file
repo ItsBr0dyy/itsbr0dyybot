@@ -15,7 +15,7 @@ USER_SCOPE = [
     AuthScope.CHANNEL_MANAGE_BROADCAST,  # Manage broadcast settings
     AuthScope.CHANNEL_MODERATE,    # Moderate chat (timeout, ban, delete messages)
     AuthScope.USER_BOT,            # Bot account authorization
-    AuthScope.CHANNEL_BOT          # Allow users to add chatbot to their channel
+    AuthScope.CHANNEL_BOT          # Join as a chatbot
 ]
 TARGET_CHANNEL = '6PLJay', 'DUSSEI', 'jonnypunan1', 'moxzymindset', 'bandstarowenn', 'itsbr0dyybot', 'ohkaydxnce', 'jjaidens', 'boggles', 'rxzzlive', '7xaspect', 'r3demptiontj', 'kevinmeelo', 'magicnxtup', 'k3tchemm', 'landincarrofficial', 'rynotheracoon', 'elijahbarnesx1', 'nic2icey', 'retweetlani', 'markey_live', 'brodymostwanted', 'itsbr0dyy', 'pladdytana', 'humphreytheking', 'nismo350z1', '6pljay', 'gavinmagnus', 'wishforstar'
 
